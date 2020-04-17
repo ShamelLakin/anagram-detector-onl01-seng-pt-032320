@@ -6,9 +6,11 @@ class Anagram
     @word = word 
   end
   
-  def self.match(word_array)
-    word_array.find do |w| 
-    @word.split("").sort == w.split("").sort
+  def match(word_array) 
+    word_array.find_all do |w|
+      (@word.split("").sort) == (w.split("").sort)
+      #iterating over the array of words that the .match method takes as an argument which is (word) @word in this case.
+      # split a word into an array of letters using example => some_word.split("") & comparing two arrays using the == .
     end
-  end 
+  end
 end 
