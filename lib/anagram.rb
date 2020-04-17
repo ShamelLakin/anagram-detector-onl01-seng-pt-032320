@@ -6,7 +6,8 @@ class Anagram
     @word = word 
   end
   
-  def self.match(words)
-    words.split("") == word
+  def self.match(word_array)
+    word_array.find do |w| 
+    word_array.split("") == w.
   end 
 end 
